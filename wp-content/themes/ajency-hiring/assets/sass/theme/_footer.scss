@@ -1,0 +1,94 @@
+.site-footer{
+    border: none;
+    padding: 80px 0;
+    .wrap{
+        display: flex !important;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        .footer-logos{
+            width: 50%;
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+
+            #panomax-logo{
+               img{
+                   height: 48px !important;
+               }
+            }
+
+            img{
+                margin-left: 32px;
+            }
+        }
+        .nav-secondary{
+            width: 50%;
+            text-align: left;
+            flex-grow: 1;
+            margin-top: 0;
+            .wrap{
+                display: block !important;
+                ul{
+                    display: flex;
+                    align-items: flex-start;
+                    li{
+                        a{
+                            font-size: 1.063rem;
+                            line-height: 160% !important;
+                            color: $black;
+                            margin-left: 0;
+                            margin-right: 56.5px;
+                            font-weight: 500;
+            
+                            &:hover{
+                                color: $black;
+                            }
+                        }
+                        &:last-child{
+                            a{
+                                margin-right: 0;
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 768px){
+        padding: 40px 0;
+        .wrap{
+            align-items: flex-end;
+            .footer-logos{
+                flex-direction: column;
+
+                img{
+                    margin-left: 0;
+                    margin-bottom: 25px;
+
+                    &#panomax-logo{
+                        height: 38px;
+                    }
+
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .nav-secondary{
+                .wrap{
+                    ul{
+                        flex-direction: column;
+                        li{
+                            a{
+                                margin-bottom: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

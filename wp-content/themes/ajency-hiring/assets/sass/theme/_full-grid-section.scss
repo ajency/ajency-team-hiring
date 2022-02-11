@@ -1,0 +1,44 @@
+.section-full-grid{
+    padding-top: 122px;
+    padding-bottom: 61.14px;
+
+    .img-preview{
+        .wp-block-group{
+            &__inner-container{
+                .card{
+                    height: 185px;
+                    bottom: -55px;
+                    &__logo{
+                        padding: 0;
+                    }
+                    .gb-container-inside{
+                        height: 100%;
+                        .gb-container-content{
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px){
+        padding-top: 60px;
+        padding-bottom: 90px;
+    }
+
+    @media(max-width:768px){
+        .img-preview{
+            .wp-block-group{
+                &__inner-container{
+                    .card{
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
